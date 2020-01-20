@@ -10,25 +10,30 @@ module.exports = {
     path: path.resolve(__dirname, "dist")
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./html/index.html" }),
-    new CopyPlugin([
-      { from: "./html/assets", to: "./assets" },
-      { from: "./html/style.css" }
+    new HtmlWebpackPlugin({
+      template: "./html/index.html"
+    }),
+    new CopyPlugin([{
+        from: "./html/assets",
+        to: "./assets"
+      },
+      {
+        from: "./html/style.css"
+      }
     ]),
     new CleanObsoleteChunks()
   ],
   module: {
-    rules: [
-      {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"]
-          }
+    rules: [{
+      test: /\.js?$/,
+      exclude: /node_modules/,
+      use: {
+        loader: "babel-loader",
+        options: {
+          presets: ["@babel/preset-env"]
         }
       }
-    ]
-  }
+    }]
+  },
+  devtool: 'eval-source-map'
 };

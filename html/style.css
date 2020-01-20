@@ -1,3 +1,37 @@
+/* temp */
+.header {
+  margin-top: 20px;
+}
+a.accordeon-chapter {
+  display: block;
+  width: fit-content;
+  display: block;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.1em;
+  font-size: 0.8em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+
+a.accordeon {
+  background: #E5E5E5;
+}
+
+.accordeon-content {
+  padding-left: 10px;
+  max-height: 0;
+  overflow: hidden;
+  border-left: 1px solid #E5E5E5;
+}
+
+
+
+
 .document .preview {
   font-family: "Open Sans" !important;
 }
