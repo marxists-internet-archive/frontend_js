@@ -4,47 +4,53 @@
 /*****************************/
 /* Table of Contents Service */
 /*****************************/
-.modal-container {
+.header .modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.93);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.85);
   min-width: 100%;
   min-height: 100%;
-  box-sizing: border-box;
   opacity: 0;
-  display: none;
   transition: all 0.3s ease;
+  z-index: 3;
 }
 
 .modal-content {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
   width: max-content;
-  max-width: 95vw;
   max-height: 75vh;
   overflow: scroll;
+  scroll-behavior: smooth;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   border-right: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
   border-top: 1px solid #E5E5E5;
+  background-color: #ffffff;
+  margin-bottom: 2em;
+  -webkit-box-shadow: 0px 0px 10px 0px #D8D8D8;
+  box-shadow: 0px 0px 10px 0px #D8D8D8;
 }
 
 @media only screen and (max-width: 425px) {
   .modal-content {
-    top: 20%;
-    min-width: 95%;
+    min-width: 95vw;
+    max-width: 95vw;
     max-height: 65vh;
   }
 }
 
 div.accordeon-chapter {
-  display: block;
   width: fit-content;
-  display: block;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.2em;
@@ -77,15 +83,14 @@ div.accordeon span.is-open:after {
 
 div.modal-container #close-modal-btn {
   content: url('./assets/js-img/table_of_contents_service/close.svg');
-  display: block;
   height: 3em;
   width: 3em;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, 0.1em);
+  /* position: absolute; */
+  flex-basis: 100%;
   z-index: 99;
-  /* -webkit-tap-highlight-color: transparent; */
+  -webkit-tap-highlight-color: transparent;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 div.header #open-modal-btn {
@@ -96,17 +101,14 @@ div.header #open-modal-btn {
   width: 3em;
   top: 5%;
   right: 1em;
-  z-index: 98;
+  z-index: 5;
   opacity: 0.1;
   transition: all 500ms;
   -webkit-transition: opacity 500ms linear;
-	-moz-transition: opacity 500ms linear;
+  -moz-transition: opacity 500ms linear;
   -o-transition: opacity 500ms linear;
   /* -webkit-tap-highlight-color: transparent; */
 }
-
-
-
 
 div.accordeon {
   background: #E5E5E5;

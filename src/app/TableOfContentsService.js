@@ -104,9 +104,9 @@ export class TableOfContentsService {
    */
   openChapterList(modal) {
     this.modalOpenBtn.onclick = () => {
-      modal.style.display = "block";
+      modal.style.display = "flex";
       setTimeout(() => {
-        modal.style.opacity = "5";
+        modal.style.opacity = "1";
       }, 1);
     }
   }
