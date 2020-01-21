@@ -18,7 +18,15 @@ module.exports = {
         to: "./assets"
       },
       {
-        from: "./html/style.css"
+        from: "./html/*.css",
+        to: "./[name].css"
+      },
+      {
+        from: './src/assets/css/js_style.css'
+      },
+      {
+        from: './src/assets/js-img',
+        to: './assets/js-img'
       }
     ]),
     new CleanObsoleteChunks()

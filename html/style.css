@@ -1,49 +1,26 @@
-/* temp */
-.header {
-  margin-top: 20px;
-}
-a.accordeon-chapter {
-  display: block;
-  width: fit-content;
-  display: block;
-  padding-left:0.5em;
-  padding-right:0.5em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin-bottom: 0.1em;
-  font-size: 0.8em;
-  border-radius: 3px;
-  text-decoration: none;
-  color: black;
-}
+/* 
+Do not change this document, use js_style.css, 
+which will be included in build.
 
-
-a.accordeon {
-  background: #E5E5E5;
-}
-
-.accordeon-content {
-  padding-left: 10px;
-  max-height: 0;
-  overflow: hidden;
-  border-left: 1px solid #E5E5E5;
-}
-
-
-
-
+Этот документ не используется для билда.
+для изменения стилей не связанных с JS разработкой, смотри описание здесь:
+https://github.com/marxists-internet-archive/md_parser_v2/blob/master/README.md
+*/
 .document .preview {
   font-family: "Open Sans" !important;
 }
+
 .document .preview .nav-links a {
   color: black;
 }
+
 .document .preview p {
   hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
 }
+
 .document .preview .meta {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -52,28 +29,34 @@ a.accordeon {
   border-radius: 0.3em;
   font-family: "Noto Serif";
 }
+
 .document .preview .meta h1 {
   font-size: 3em;
   color: brown;
   font-weight: bold;
 }
+
 .document .preview .meta .author-name {
   font-size: 2.5em;
 }
+
 .document .preview .meta .meta-box_description {
   font-size: 1.3em;
   margin-bottom: 1em;
 }
+
 .document .preview .meta .meta-box_description__theme_keywords {
   font-size: 1.3em;
   font-style: italic;
   margin-bottom: 1em;
 }
+
 .document .preview .meta .meta-box {
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px dashed grey;
 }
+
 .document .preview .meta .meta-box a {
   color: #5f5f5f;
   text-decoration: none;
@@ -81,15 +64,18 @@ a.accordeon {
   transition: border-bottom 0.3s;
   border-bottom: 1px solid white;
 }
+
 .document .preview .meta .meta-box a:hover {
   color: black;
   border-bottom: 1px solid black;
 }
+
 .document .preview h2 {
   font-weight: bold;
   padding-top: 0.3em;
   padding-bottom: 0.2em;
 }
+
 .document .preview li {
   margin-bottom: 1em;
   margin-left: -2.4em;
@@ -97,6 +83,7 @@ a.accordeon {
   padding-left: 1em;
   border-left: 0.1em solid #ebe9e7;
 }
+
 .document .preview .footnotes li {
   border-left: 0.1em solid #d80000;
 }
@@ -105,36 +92,47 @@ a.accordeon {
   .document .preview h1 {
     font-size: 1.4em;
   }
+
   .document .preview h2 {
     font-size: 1.3em;
   }
+
   .document .preview h3 {
     font-size: 1.2em;
   }
+
   .document .preview h4 {
     font-size: 1em;
   }
+
   .document .preview h5 {
     font-size: 1em;
   }
+
   .document .preview .meta {
     padding-top: 1.5em;
   }
+
   .document .preview .meta h1 {
     font-size: 1.4em;
   }
+
   .document .preview .meta .author-name {
     font-size: 1.3em;
   }
+
   .document .preview .meta .meta-box_description {
     font-size: 1em;
   }
+
   .document .preview .meta .meta-box_description__theme_keywords {
     font-size: 1em;
   }
+
   .document .preview .meta h5 {
     font-size: 1em;
   }
+
   .document .preview .meta .meta-box {
     margin-top: 1em;
     padding-top: 0.5em;
@@ -177,16 +175,11 @@ a.accordeon {
   src: url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
   src: local("Open Sans Regular"), local("OpenSans-Regular"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.woff2")
-      format("woff2"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.woff")
-      format("woff"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.ttf")
-      format("truetype"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.svg#OpenSans")
-      format("svg");
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.woff2") format("woff2"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.woff") format("woff"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.ttf") format("truetype"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-regular.svg#OpenSans") format("svg");
   /* Legacy iOS */
 }
 
@@ -198,16 +191,11 @@ a.accordeon {
   src: url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.eot");
   /* IE9 Compat Modes */
   src: local("Open Sans Italic"), local("OpenSans-Italic"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.woff2")
-      format("woff2"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.woff")
-      format("woff"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.ttf")
-      format("truetype"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.svg#OpenSans")
-      format("svg");
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.woff2") format("woff2"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.woff") format("woff"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.ttf") format("truetype"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-italic.svg#OpenSans") format("svg");
   /* Legacy iOS */
 }
 
@@ -219,16 +207,11 @@ a.accordeon {
   src: url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.eot");
   /* IE9 Compat Modes */
   src: local("Open Sans Bold"), local("OpenSans-Bold"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.woff2")
-      format("woff2"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.woff")
-      format("woff"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.ttf")
-      format("truetype"),
-    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.svg#OpenSans")
-      format("svg");
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.woff2") format("woff2"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.woff") format("woff"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.ttf") format("truetype"),
+    url("./assets/fonts/open-sans/open-sans-v16-latin_cyrillic-700.svg#OpenSans") format("svg");
   /* Legacy iOS */
 }
 
@@ -243,16 +226,11 @@ a.accordeon {
   src: url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
   src: local("Noto Serif"), local("NotoSerif"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.woff2")
-      format("woff2"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.woff")
-      format("woff"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.ttf")
-      format("truetype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.svg#NotoSerif")
-      format("svg");
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.woff2") format("woff2"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.woff") format("woff"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.ttf") format("truetype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-regular.svg#NotoSerif") format("svg");
   /* Legacy iOS */
 }
 
@@ -264,16 +242,11 @@ a.accordeon {
   src: url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.eot");
   /* IE9 Compat Modes */
   src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.woff2")
-      format("woff2"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.woff")
-      format("woff"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.ttf")
-      format("truetype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.svg#NotoSerif")
-      format("svg");
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.woff2") format("woff2"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.woff") format("woff"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.ttf") format("truetype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-italic.svg#NotoSerif") format("svg");
   /* Legacy iOS */
 }
 
@@ -285,16 +258,11 @@ a.accordeon {
   src: url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.eot");
   /* IE9 Compat Modes */
   src: local("Noto Serif Bold Italic"), local("NotoSerif-BoldItalic"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.woff2")
-      format("woff2"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.woff")
-      format("woff"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.ttf")
-      format("truetype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.svg#NotoSerif")
-      format("svg");
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.woff2") format("woff2"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.woff") format("woff"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.ttf") format("truetype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700italic.svg#NotoSerif") format("svg");
   /* Legacy iOS */
 }
 
@@ -306,15 +274,10 @@ a.accordeon {
   src: url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.eot");
   /* IE9 Compat Modes */
   src: local("Noto Serif Bold"), local("NotoSerif-Bold"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.woff2")
-      format("woff2"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.woff")
-      format("woff"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.ttf")
-      format("truetype"),
-    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.svg#NotoSerif")
-      format("svg");
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.woff2") format("woff2"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.woff") format("woff"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.ttf") format("truetype"),
+    url("./assets/fonts/noto-serif/noto-serif-v7-latin_cyrillic-700.svg#NotoSerif") format("svg");
   /* Legacy iOS */
 }
