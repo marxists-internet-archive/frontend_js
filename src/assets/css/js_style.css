@@ -9,7 +9,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.93);
   min-width: 100%;
   min-height: 100%;
   box-sizing: border-box;
@@ -31,6 +31,14 @@
   border-right: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
   border-top: 1px solid #E5E5E5;
+}
+
+@media only screen and (max-width: 425px) {
+  .modal-content {
+    top: 20%;
+    min-width: 95%;
+    max-height: 65vh;
+  }
 }
 
 div.accordeon-chapter {
@@ -77,6 +85,7 @@ div.modal-container #close-modal-btn {
   left: 50%;
   transform: translate(-50%, 0.1em);
   z-index: 99;
+  /* -webkit-tap-highlight-color: transparent; */
 }
 
 div.header #open-modal-btn {
@@ -87,10 +96,17 @@ div.header #open-modal-btn {
   width: 3em;
   top: 5%;
   right: 1em;
-  z-index: 99;
+  z-index: 98;
   opacity: 0.1;
-  transition: all 0.5s;
+  transition: all 500ms;
+  -webkit-transition: opacity 500ms linear;
+	-moz-transition: opacity 500ms linear;
+  -o-transition: opacity 500ms linear;
+  /* -webkit-tap-highlight-color: transparent; */
 }
+
+
+
 
 div.accordeon {
   background: #E5E5E5;

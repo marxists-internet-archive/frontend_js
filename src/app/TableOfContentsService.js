@@ -1,3 +1,5 @@
+import Bowser from 'bowser';
+
 export class TableOfContentsService {
   constructor() {
     this.chapters = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
@@ -21,6 +23,8 @@ export class TableOfContentsService {
     this.modalContainer.appendChild(this.modalCloseBtn);
     this.modalContainer.appendChild(this.modal);
     this.header.appendChild(this.modalContainer);
+
+    this.bowser = Bowser.parse(window.navigator.userAgent);
   }
 
   /**
@@ -154,6 +158,15 @@ export class TableOfContentsService {
     firstParent.style.maxHeight = "100%";
     firstParent.previousElementSibling.firstChild.classList.toggle('is-open');
   }
+
+  safariWorkaround() {
+    const name = this.bowser.browser.name;
+    const type = this.bowser.platform.type;
+    if (name == "Safari" && type == "desktop") {
+      this.modalOpenBtn.style.transitionProperty = "none";
+    }
+  }
+
   run() {
     this.generateChaptersTable(0, 1, this.modal);
     this.addEventListeners();
@@ -162,6 +175,7 @@ export class TableOfContentsService {
     this.chapterBtnOnMouseOver(this.modalOpenBtn);
     this.openChapterList(this.modalContainer);
     this.closeChapterList(this.modalContainer);
+    this.safariWorkaround();
 
   }
 }
