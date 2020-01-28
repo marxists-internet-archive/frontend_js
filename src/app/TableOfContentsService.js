@@ -25,6 +25,9 @@ export class TableOfContentsService {
     this.header.appendChild(this.modalContainer);
 
     this.bowser = Bowser.parse(window.navigator.userAgent);
+
+    this.scrollPosition = 0;
+    this.openBtnOpacity = 0.9;
   }
 
   /**
@@ -116,14 +119,29 @@ export class TableOfContentsService {
    * @param {Node} node 
    */
   chapterBtnOnScroll(node) {
-    let timer = null;
     window.onscroll = () => {
-      clearTimeout(timer)
-      node.style.opacity = "0.9"
-      timer = setTimeout(() => {
-        node.style.opacity = "0.1"
-      }, 500);
+      var scroll = this.getBodyScrollTop();
+      if (scroll < 120) {
+        node.style.opacity = 0.9;
+      } else if (scroll > this.scrollPosition) {
+        if (this.openBtnOpacity > 0) {
+          this.openBtnOpacity = this.openBtnOpacity - 0.05;
+        }
+        node.style.opacity = this.openBtnOpacity;
+      } else {
+        if (this.openBtnOpacity < 0.9) {
+          this.openBtnOpacity = this.openBtnOpacity + 0.05;
+        }
+        node.style.opacity = this.openBtnOpacity;
+      }
+      this.scrollPosition = scroll;
     }
+  }
+
+
+  getBodyScrollTop() {
+    const el = document.scrollingElement || document.documentElement;
+    return el.scrollTop
   }
 
   /**
@@ -133,10 +151,11 @@ export class TableOfContentsService {
    */
   chapterBtnOnMouseOver(node) {
     node.onmouseover = () => {
-      node.style.opacity = "1"
+      node.style.opacity = "0.9";
     }
     node.onmouseout = () => {
-      node.style.opacity = "0.1"
+      // set button opacity to before...
+      node.style.opacity = this.openBtnOpacity;
     }
   }
 

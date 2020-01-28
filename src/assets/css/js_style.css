@@ -5,7 +5,7 @@
 /* Table of Contents Service */
 /*****************************/
 .header .modal-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: flex-start;
   align-content: center;
@@ -102,11 +102,11 @@ div.header #open-modal-btn {
   top: 5%;
   right: 1em;
   z-index: 5;
-  opacity: 0.1;
-  transition: all 500ms;
+  opacity: 0.9;
+  /* transition: all 500ms;
   -webkit-transition: opacity 500ms linear;
   -moz-transition: opacity 500ms linear;
-  -o-transition: opacity 500ms linear;
+  -o-transition: opacity 500ms linear; */
   /* -webkit-tap-highlight-color: transparent; */
 }
 
@@ -124,3 +124,17 @@ div.accordeon {
 /*****************************/
 /* Other Service */
 /*****************************/
+
+.noscript-message {
+  font-family: "Open Sans" !important;
+  margin: auto;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  width: max-content;
+  max-width: 85%;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #721c24;
+}
